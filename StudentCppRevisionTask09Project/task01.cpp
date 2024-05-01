@@ -26,6 +26,15 @@
 
 int task01(int number) {
 	
+	int divisor = 0;
 
-	return 0;
+	for (int i = 2; i <= number; i++)
+	{
+		if (number % i == 0) {
+			divisor = i;
+			break;
+		}
+	}
+
+	return divisor;
 }
