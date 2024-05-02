@@ -1,5 +1,5 @@
 ﻿#include "tasks.h"
-
+#include <cmath>
 /*	Task 02. An Exact Power of Two [точная степень двойки]
 *
 *	Дано целое число. Необходимо определить, 
@@ -31,5 +31,20 @@
 */
 
 bool task02(int number) {
-	return false;
+	bool result = false;
+
+	if (number == 1) {
+		result =  true;
+	}
+	
+	while (number > 0 && number % 2 == 0) {
+		if (number == 2) {
+			result = true;
+			break;
+		}
+
+		number /= 2;
+	}
+
+	return result;
 }

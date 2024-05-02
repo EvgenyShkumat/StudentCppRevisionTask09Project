@@ -25,7 +25,6 @@
 */
 
 int task01(int number) {
-	
 	int divisor = 0;
 
 	for (int i = 2; i <= number; i++)
